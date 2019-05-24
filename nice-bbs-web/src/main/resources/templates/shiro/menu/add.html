@@ -7,6 +7,15 @@
     <title>后台管理系统</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/dashboard/dashboard.css}">
+    <link rel="stylesheet" th:href="@{/css/loginAndRegister/form.css}">
+    <link rel="stylesheet" th:href="@{/css/loginAndRegister/input.css}">
+    <link rel="stylesheet" th:href="@{/css/dashboard/dashboard.css}">
+    <style type="text/css">
+        .container{
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -59,35 +68,58 @@
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="container">
+                <form class="form-signin">
+                    <h2 class="form-signin-heading">添加菜单</h2>
+<!--                    <label for="menu_name" class="form-control"></label>-->
+                    <input type="text" id="menu_name" class="form-control" placeholder="选项" required autofocus>
+                    <label for="remark" class="sr-only">备注</label>
+                    <input type="text" id="remark" class="form-control" placeholder="备注" required>
+                    <label for="icon" class="sr-only">图标</label>
+                    <input type="text" id="icon" class="form-control" placeholder="图标" required>
+                    <label for="channel" class="sr-only">通道</label>
+                    <input type="text" id="channel" class="form-control" placeholder="通道" required>
+                    <label for="param" class="sr-only">参数</label>
+                    <input type="text" id="param" class="form-control" placeholder="参数" required>
+<!--                    <label for="display" class="sr-only">是否显示</label>-->
+                    <input type="checkbox" id="locked"  > 是否锁定
+                    <!--            <div class="checkbox">-->
+                    <!--                <label>-->
+                    <!--                    <input type="checkbox" value="remember-me"> Remember me-->
+                    <!--                </label>-->
+                    <!--            </div>-->
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">确认添加</button>
+                </form>
+            </div> <!-- /container -->
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary">回到首页</button>
+<!--            <button type="button" class="btn btn-primary">回到首页</button>-->
 
             <!-- Indicates a successful or positive action -->
-            <button type="button" class="btn btn-success">添加菜单</button>
+<!--            <button type="button" class="btn btn-success">添加菜单</button>-->
 
             <!-- Contextual button for informational alert messages -->
-            <button type="button" class="btn btn-info">初始化菜单</button>
+<!--            <button type="button" class="btn btn-info">初始化菜单</button>-->
 
             <!-- Indicates caution should be taken with this action -->
-            <button type="button" class="btn btn-warning">修改菜单</button>
+<!--            <button type="button" class="btn btn-warning">修改菜单</button>-->
 
             <!-- Indicates a dangerous or potentially negative action -->
-            <button type="button" class="btn btn-danger">删除菜单</button>
+<!--            <button type="button" class="btn btn-danger">删除菜单</button>-->
 
             <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <!--            <button type="button" class="btn btn-link">（链接）Link</button>-->
 
 
-            <h2 class="sub-header">菜单列表</h2>
+<!--            <h2 class="sub-header">权限列表</h2>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                     <tr>
                         <th>是否选中</th>
-                        <th>菜单名</th>
-                        <th>icon</th>
+                        <th>权限名</th>
+                        <th>分配角色</th>
                         <th>level</th>
-                        <th>菜单备注</th>
+                        <th>角色备注</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -205,12 +237,12 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
-<script rel="script" type="javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
-<script rel="script" type="javascript" th:src="@{/js/bootstrap.min.js}"></script>
-<!--<script rel="script" type="javascript" th:src="@{/js/vendor/holder.min.js}"></script>-->
+<!--    <div class="add-box"></div>-->
+<script   th:src="@{/js/jquery-3.4.1.min.js}"></script>
+<script   th:src="@{/js/bootstrap.min.js}"></script>
 </body>
 </html>
