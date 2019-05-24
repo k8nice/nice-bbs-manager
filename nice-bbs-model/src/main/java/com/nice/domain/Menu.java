@@ -18,8 +18,9 @@ public class Menu
     private String channel;
     private String param;
     private Boolean locked;
+    private Long paterId;
     private Long ordno;
-    private Long nlevel;
+    private Long nLevel;
     private Long scort;
     private Date menuCreateDate;
     private Date menuUpdateDate;
