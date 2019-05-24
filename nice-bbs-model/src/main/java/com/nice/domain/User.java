@@ -5,6 +5,10 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 用户实体类
+ * @author ningh
+ */
 @Data
 public class User implements Serializable {
     private static final long serialVersionUID = -7020619477594468968L;
@@ -16,6 +20,6 @@ public class User implements Serializable {
     private String userPhone;
     private String userGender;
     private String userAge;
-    private String roleName;
+    private Long userGroupId;
     private String salt;
 }
