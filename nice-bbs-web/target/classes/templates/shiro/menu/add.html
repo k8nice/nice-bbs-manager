@@ -81,168 +81,32 @@
                     <input type="text" id="channel" class="form-control" placeholder="通道" required>
                     <label for="param" class="sr-only">参数</label>
                     <input type="text" id="param" class="form-control" placeholder="参数" required>
+                    <label for="pater_id" class="sr-only">父级编号</label>
+<!--                    <input type="text" id="pater_id" class="form-control" placeholder="父级编号" required>-->
+                    <select id="pater_id" class="form-control">
+                        <option>父级菜单</option>
+                    </select>
+                    <label for="ordno" class="sr-only">排序编号</label>
+                    <input type="text" id="ordno" class="form-control" placeholder="排序编号" required>
+                    <label for="n_level" class="sr-only">等级</label>
+                    <input type="text" id="n_level" class="form-control" placeholder="等级" required>
 <!--                    <label for="display" class="sr-only">是否显示</label>-->
-                    <input type="checkbox" id="locked"  > 是否锁定
-                    <!--            <div class="checkbox">-->
-                    <!--                <label>-->
-                    <!--                    <input type="checkbox" value="remember-me"> Remember me-->
-                    <!--                </label>-->
-                    <!--            </div>-->
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">确认添加</button>
+                    <input type="checkbox" id="locked"  > 是否开启
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="real-add-btn">确认添加</button>
                 </form>
             </div> <!-- /container -->
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<!--            <button type="button" class="btn btn-primary">回到首页</button>-->
-
-            <!-- Indicates a successful or positive action -->
-<!--            <button type="button" class="btn btn-success">添加菜单</button>-->
-
-            <!-- Contextual button for informational alert messages -->
-<!--            <button type="button" class="btn btn-info">初始化菜单</button>-->
-
-            <!-- Indicates caution should be taken with this action -->
-<!--            <button type="button" class="btn btn-warning">修改菜单</button>-->
-
-            <!-- Indicates a dangerous or potentially negative action -->
-<!--            <button type="button" class="btn btn-danger">删除菜单</button>-->
-
-            <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<!--            <button type="button" class="btn btn-link">（链接）Link</button>-->
-
-
-<!--            <h2 class="sub-header">权限列表</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>是否选中</th>
-                        <th>权限名</th>
-                        <th>分配角色</th>
-                        <th>level</th>
-                        <th>角色备注</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>dolor</td>
-                        <td>sit</td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>amet</td>
-                        <td>consectetur</td>
-                        <td>adipiscing</td>
-                        <td>elit</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>Integer</td>
-                        <td>nec</td>
-                        <td>odio</td>
-                        <td>Praesent</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>libero</td>
-                        <td>Sed</td>
-                        <td>cursus</td>
-                        <td>ante</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>dapibus</td>
-                        <td>diam</td>
-                        <td>Sed</td>
-                        <td>nisi</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>Nulla</td>
-                        <td>quis</td>
-                        <td>sem</td>
-                        <td>at</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>nibh</td>
-                        <td>elementum</td>
-                        <td>imperdiet</td>
-                        <td>Duis</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>sagittis</td>
-                        <td>ipsum</td>
-                        <td>Praesent</td>
-                        <td>mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>Fusce</td>
-                        <td>nec</td>
-                        <td>tellus</td>
-                        <td>sed</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>augue</td>
-                        <td>semper</td>
-                        <td>porta</td>
-                        <td>Mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>massa</td>
-                        <td>Vestibulum</td>
-                        <td>lacinia</td>
-                        <td>arcu</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>eget</td>
-                        <td>nulla</td>
-                        <td>Class</td>
-                        <td>aptent</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>taciti</td>
-                        <td>sociosqu</td>
-                        <td>ad</td>
-                        <td>litora</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>torquent</td>
-                        <td>per</td>
-                        <td>conubia</td>
-                        <td>nostra</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>per</td>
-                        <td>inceptos</td>
-                        <td>himenaeos</td>
-                        <td>Curabitur</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>sodales</td>
-                        <td>ligula</td>
-                        <td>in</td>
-                        <td>libero</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>-->
         </div>
     </div>
 </div>
 <!--    <div class="add-box"></div>-->
-<script   th:src="@{/js/jquery-3.4.1.min.js}"></script>
-<script   th:src="@{/js/bootstrap.min.js}"></script>
+<script   th:src="@{/js/jquery-3.4.1.min.js}" ></script>
+<script   th:src="@{/js/bootstrap.min.js}" ></script>
+    <script >
+      //  alert(1)
+        $('#real-add-btn').click(function () {
+       //     alert(1);
+           alert($('#remark').text())
+        })
+    </script>
 </body>
 </html>

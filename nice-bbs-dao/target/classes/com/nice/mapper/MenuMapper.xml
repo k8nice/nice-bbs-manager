@@ -1,0 +1,14 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nice.mapper.MenuMapper">
+    <insert id="addMenu" >
+        insert into
+        sys_menu
+        (menu_id,menu_name,remark,icon,menu_channel,param,menu_locked,pater_id,ordno,n_level,scort,menu_create_date,menu_update_date)
+         values
+        (#{menuId},#{menuName},#{remark},
+        #{icon},#{channel},#{param},#{locked},#{paterId},#{ordno},#{nLevel},#{scort},
+        #{menuCreateDate},#{menuUpdateDate});
+    </insert>
+</mapper>
